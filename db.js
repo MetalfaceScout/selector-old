@@ -1,0 +1,5 @@
+class jsonDB {
+    constructor (filename) {
+        
+    }
+}

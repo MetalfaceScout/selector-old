@@ -1,0 +1,124 @@
+html {
+    background-color: #373333;
+    color:  rgb(233, 255, 245); /*dont like, change later*/
+}
+
+#team1name {
+    color: #f8c0c0;
+}
+
+#team2name {
+    color: #c0c0f8
+}
+
+.teamname {
+    text-align: center;
+}
+
+.teamHeader {
+    border-style: solid;
+    border-color: #c5bbbb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teamHeader h2, .teamHeader p {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#mainSection {
+    display: grid;
+    grid-template-columns: minmax(100px, 40%) minmax(700px, 1fr);
+}
+
+#teamSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    border-style: solid;
+    border-color: #c5bbbb;
+}
+
+#titleHeader {
+    display: flex;
+    flex-flow: column;
+}
+
+#titleHeader h1 {
+    text-align: center;
+}
+
+#formatSelectDivider select, #formatSelectDivider label {
+    font-size: x-large;
+    display: inline;
+}
+
+#formatSelectDivider {
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+
+ 
+.teamGrid {
+    display: grid;
+    grid-template-columns: minmax(110px, 30%) 1fr;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c5bbbb;
+}
+
+.teamGrid h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.teamGrid div{
+    border-style: solid;
+    border-color: #c5bbbb;
+    border-width: 1px;
+}
+
+.teamGrid div p, .teamGrid p {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    vertical-align: middle;
+    font-size: large;
+}
+
+#infoSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+}
+
+#playerPool {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 4;
+    border-style: solid;
+    border-color:#c5bbbb;
+}
+
+.randomizeTeamButton {
+    font-size: 1.5rem;
+}
+
+#addPlayerForm div, #addPlayerButton, #removePlayerButton {
+    margin: 1.0rem;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 1112px) {
+    #mainSection {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+}
